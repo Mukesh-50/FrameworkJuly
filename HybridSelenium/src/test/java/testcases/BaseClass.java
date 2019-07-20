@@ -85,7 +85,7 @@ public class BaseClass {
 		{
 			System.out.println("LOG : PASS User is able to login");
 			try {
-				logger.pass("Test Passed ", MediaEntityBuilder.createScreenCaptureFromBase64String(Utility.captureScreenshotBase64(driver)).build());
+				logger.pass("Test Passed ", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
 			} catch (IOException e) {
 				
 			}
