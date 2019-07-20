@@ -21,18 +21,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility {
 	
-	// ExpectedCondition- ExplicitWait- Proper output
-	
-	
-	// screenshot
-	// mail - Jenkins
-	// logging
-	// Report- Baseclass,
-	// format dateandtime
-	// response time
-	// sync issues
-	// javascript executor
-	// Handle windows activity
 	
 	WebDriverWait wait;
 	
