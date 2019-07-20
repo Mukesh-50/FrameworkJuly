@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[LOG : INFO -Config File loaded]]>
+    </line>
+    <line>
+      <![CDATA[LOG : INFO -Data File loaded]]>
+    </line>
+    <line>
+      <![CDATA[My Test]]>
+    </line>
+    <line>
+      <![CDATA[LOG :Info- Creating Browser Instance]]>
+    </line>
+    <line>
+      <![CDATA[LOG :Info- Creating Browser Instance]]>
+    </line>
+    <line>
+      <![CDATA[LOG :Info- Creating Browser Instance]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20777" started-at="2019-07-13T03:53:12Z" finished-at="2019-07-13T03:53:33Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="20777" started-at="2019-07-13T03:53:12Z" finished-at="2019-07-13T03:53:33Z">
+      <class name="unitTest.FileUnitTest">
+        <test-method status="PASS" signature="testConfigData()[pri:0, instance:unitTest.FileUnitTest@617c74e5]" name="testConfigData" duration-ms="21" started-at="2019-07-13T09:23:12Z" finished-at="2019-07-13T09:23:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG : INFO -Config File loaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testConfigData -->
+        <test-method status="PASS" signature="testExcelData()[pri:0, instance:unitTest.FileUnitTest@617c74e5]" name="testExcelData" duration-ms="1061" started-at="2019-07-13T09:23:12Z" finished-at="2019-07-13T09:23:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG : INFO -Data File loaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExcelData -->
+      </class> <!-- unitTest.FileUnitTest -->
+      <class name="unitTest.TestBrowsers">
+        <test-method status="PASS" signature="testChrome()[pri:0, instance:unitTest.TestBrowsers@366e2eef]" name="testChrome" duration-ms="6102" started-at="2019-07-13T09:23:13Z" finished-at="2019-07-13T09:23:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG :Info- Creating Browser Instance]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testChrome -->
+        <test-method status="PASS" signature="testFirefox()[pri:0, instance:unitTest.TestBrowsers@366e2eef]" name="testFirefox" duration-ms="10607" started-at="2019-07-13T09:23:20Z" finished-at="2019-07-13T09:23:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG :Info- Creating Browser Instance]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testFirefox -->
+        <test-method status="PASS" signature="testIE()[pri:0, instance:unitTest.TestBrowsers@366e2eef]" name="testIE" duration-ms="2956" started-at="2019-07-13T09:23:30Z" finished-at="2019-07-13T09:23:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG :Info- Creating Browser Instance]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testIE -->
+      </class> <!-- unitTest.TestBrowsers -->
+      <class name="unitTest.UnitTest1">
+        <test-method status="PASS" signature="test1()[pri:0, instance:unitTest.UnitTest1@34b7bfc0]" name="test1" duration-ms="0" started-at="2019-07-13T09:23:13Z" finished-at="2019-07-13T09:23:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- unitTest.UnitTest1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

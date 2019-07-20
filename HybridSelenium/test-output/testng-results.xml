@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[LOG: INFO : Creating browser instances]]>
+    </line>
+    <line>
+      <![CDATA[LOG : INFO -Config File loaded]]>
+    </line>
+    <line>
+      <![CDATA[LOG : INFO -Config File loaded]]>
+    </line>
+    <line>
+      <![CDATA[LOG :Info- Creating Browser Instance]]>
+    </line>
+    <line>
+      <![CDATA[LOG: INFO : Browser instance is ready ]]>
+    </line>
+    <line>
+      <![CDATA[LOG : INFO -Data File loaded]]>
+    </line>
+    <line>
+      <![CDATA[LOG : INFO -Data File loaded]]>
+    </line>
+    <line>
+      <![CDATA[LOG: INFO : Closing browser instances]]>
+    </line>
+    <line>
+      <![CDATA[LOG: INFO : Browser instances closed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24806" started-at="2019-07-20T03:10:22Z" finished-at="2019-07-20T03:10:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24806" started-at="2019-07-20T03:10:22Z" finished-at="2019-07-20T03:10:47Z">
+      <class name="testcases.LoginScenario">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoginScenario@28d25987]" name="setup" is-config="true" duration-ms="358" started-at="2019-07-20T08:40:21Z" finished-at="2019-07-20T08:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupBrowser()[pri:0, instance:testcases.LoginScenario@28d25987]" name="setupBrowser" is-config="true" duration-ms="8459" started-at="2019-07-20T08:40:22Z" finished-at="2019-07-20T08:40:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG: INFO : Creating browser instances]]>
+            </line>
+            <line>
+              <![CDATA[LOG : INFO -Config File loaded]]>
+            </line>
+            <line>
+              <![CDATA[LOG : INFO -Config File loaded]]>
+            </line>
+            <line>
+              <![CDATA[LOG :Info- Creating Browser Instance]]>
+            </line>
+            <line>
+              <![CDATA[LOG: INFO : Browser instance is ready ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method status="PASS" signature="loginSucess()[pri:0, instance:testcases.LoginScenario@28d25987]" name="loginSucess" duration-ms="14544" started-at="2019-07-20T08:40:30Z" finished-at="2019-07-20T08:40:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG : INFO -Data File loaded]]>
+            </line>
+            <line>
+              <![CDATA[LOG : INFO -Data File loaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSucess -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginScenario@28d25987]" name="tearDown" is-config="true" duration-ms="1069" started-at="2019-07-20T08:40:45Z" finished-at="2019-07-20T08:40:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSucess status=SUCCESS method=LoginScenario.loginSucess()[pri:0, instance:testcases.LoginScenario@28d25987] output=LOG : INFO -Data File loaded]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginScenario@28d25987]" name="closeBrowser" is-config="true" duration-ms="708" started-at="2019-07-20T08:40:46Z" finished-at="2019-07-20T08:40:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG: INFO : Closing browser instances]]>
+            </line>
+            <line>
+              <![CDATA[LOG: INFO : Browser instances closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.LoginScenario -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
