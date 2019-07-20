@@ -78,6 +78,30 @@ public class Utility {
 		return path;
 	}
 	
+	public static String captureScreenshotBase64(WebDriver driver)
+	{
+		
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		
+		String newBase = null;
+		//String path=System.getProperty("user.dir")+"\\Screenshots\\"+"LearnAutomation"+getCurrentDateTime()+".png";
+		
+		try 
+		{
+
+			String myBase=ts.getScreenshotAs(OutputType.BASE64);
+			
+			 newBase="data:image/jpg;base64,"+myBase;
+		
+		} 
+		catch (WebDriverException e) 
+		{
+		System.out.println("Unable to capture screenshots "+e.getMessage());
+		} 
+		
+		return newBase;
+	}
+	
 	public static String getCurrentDateTime()
 	{
 	
