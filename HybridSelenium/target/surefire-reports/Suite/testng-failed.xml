@@ -3,9 +3,7 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="unitTest.FileUnitTest"/>
-      <class name="unitTest.UnitTest1"/>
-      <class name="unitTest.TestBrowsers"/>
+      <class name="testcases.LoginScenario"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->
