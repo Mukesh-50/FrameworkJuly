@@ -1,94 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
     <line>
-      <![CDATA[LOG: INFO : Creating browser instances]]>
-    </line>
-    <line>
       <![CDATA[LOG : INFO -Config File loaded]]>
     </line>
     <line>
-      <![CDATA[LOG : INFO -Config File loaded]]>
+      <![CDATA[LOG : INFO -Data File loaded]]>
+    </line>
+    <line>
+      <![CDATA[My Test]]>
     </line>
     <line>
       <![CDATA[LOG :Info- Creating Browser Instance]]>
     </line>
     <line>
-      <![CDATA[LOG: INFO : Browser instance is ready ]]>
+      <![CDATA[LOG :Info- Creating Browser Instance]]>
     </line>
     <line>
-      <![CDATA[LOG : INFO -Data File loaded]]>
-    </line>
-    <line>
-      <![CDATA[LOG : INFO -Data File loaded]]>
-    </line>
-    <line>
-      <![CDATA[LOG: INFO : Closing browser instances]]>
-    </line>
-    <line>
-      <![CDATA[LOG: INFO : Browser instances closed]]>
+      <![CDATA[LOG :Info- Creating Browser Instance]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="30692" started-at="2019-07-20T19:02:14Z" finished-at="2019-07-20T19:02:44Z">
+  <suite name="Suite" duration-ms="56093" started-at="2019-07-21T03:50:12Z" finished-at="2019-07-21T03:51:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30692" started-at="2019-07-20T19:02:14Z" finished-at="2019-07-20T19:02:44Z">
-      <class name="testcases.LoginScenario">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoginScenario@5a61f5df]" name="setup" is-config="true" duration-ms="311" started-at="2019-07-21T00:32:13Z" finished-at="2019-07-21T00:32:14Z">
+    <test name="Test" duration-ms="56093" started-at="2019-07-21T03:50:12Z" finished-at="2019-07-21T03:51:08Z">
+      <class name="unitTest.FileUnitTest">
+        <test-method status="PASS" signature="testConfigData()[pri:0, instance:unitTest.FileUnitTest@617c74e5]" name="testConfigData" duration-ms="22" started-at="2019-07-21T09:20:12Z" finished-at="2019-07-21T09:20:12Z">
           <reporter-output>
+            <line>
+              <![CDATA[LOG : INFO -Config File loaded]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupBrowser()[pri:0, instance:testcases.LoginScenario@5a61f5df]" name="setupBrowser" is-config="true" duration-ms="11865" started-at="2019-07-21T00:32:14Z" finished-at="2019-07-21T00:32:25Z">
+        </test-method> <!-- testConfigData -->
+        <test-method status="PASS" signature="testExcelData()[pri:0, instance:unitTest.FileUnitTest@617c74e5]" name="testExcelData" duration-ms="1229" started-at="2019-07-21T09:20:12Z" finished-at="2019-07-21T09:20:13Z">
           <reporter-output>
             <line>
-              <![CDATA[LOG: INFO : Creating browser instances]]>
+              <![CDATA[LOG : INFO -Data File loaded]]>
             </line>
-            <line>
-              <![CDATA[LOG : INFO -Config File loaded]]>
-            </line>
-            <line>
-              <![CDATA[LOG : INFO -Config File loaded]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- testExcelData -->
+      </class> <!-- unitTest.FileUnitTest -->
+      <class name="unitTest.TestBrowsers">
+        <test-method status="PASS" signature="testChrome()[pri:0, instance:unitTest.TestBrowsers@366e2eef]" name="testChrome" duration-ms="11722" started-at="2019-07-21T09:20:13Z" finished-at="2019-07-21T09:20:25Z">
+          <reporter-output>
             <line>
               <![CDATA[LOG :Info- Creating Browser Instance]]>
             </line>
-            <line>
-              <![CDATA[LOG: INFO : Browser instance is ready ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method status="PASS" signature="loginSucess()[pri:0, instance:testcases.LoginScenario@5a61f5df]" name="loginSucess" duration-ms="16413" started-at="2019-07-21T00:32:25Z" finished-at="2019-07-21T00:32:42Z">
+        </test-method> <!-- testChrome -->
+        <test-method status="PASS" signature="testFirefox()[pri:0, instance:unitTest.TestBrowsers@366e2eef]" name="testFirefox" duration-ms="25603" started-at="2019-07-21T09:20:25Z" finished-at="2019-07-21T09:20:50Z">
           <reporter-output>
             <line>
-              <![CDATA[LOG : INFO -Data File loaded]]>
-            </line>
-            <line>
-              <![CDATA[LOG : INFO -Data File loaded]]>
+              <![CDATA[LOG :Info- Creating Browser Instance]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginSucess -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginScenario@5a61f5df]" name="tearDown" is-config="true" duration-ms="1649" started-at="2019-07-21T00:32:42Z" finished-at="2019-07-21T00:32:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginSucess status=SUCCESS method=LoginScenario.loginSucess()[pri:0, instance:testcases.LoginScenario@5a61f5df] output=LOG : INFO -Data File loaded]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginScenario@5a61f5df]" name="closeBrowser" is-config="true" duration-ms="745" started-at="2019-07-21T00:32:44Z" finished-at="2019-07-21T00:32:44Z">
+        </test-method> <!-- testFirefox -->
+        <test-method status="PASS" signature="testIE()[pri:0, instance:unitTest.TestBrowsers@366e2eef]" name="testIE" duration-ms="17478" started-at="2019-07-21T09:20:50Z" finished-at="2019-07-21T09:21:08Z">
           <reporter-output>
             <line>
-              <![CDATA[LOG: INFO : Closing browser instances]]>
-            </line>
-            <line>
-              <![CDATA[LOG: INFO : Browser instances closed]]>
+              <![CDATA[LOG :Info- Creating Browser Instance]]>
             </line>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.LoginScenario -->
+        </test-method> <!-- testIE -->
+      </class> <!-- unitTest.TestBrowsers -->
+      <class name="unitTest.UnitTest1">
+        <test-method status="PASS" signature="test1()[pri:0, instance:unitTest.UnitTest1@34b7bfc0]" name="test1" duration-ms="0" started-at="2019-07-21T09:20:13Z" finished-at="2019-07-21T09:20:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- unitTest.UnitTest1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
