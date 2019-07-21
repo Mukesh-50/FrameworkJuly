@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -42,13 +43,16 @@ public class BaseClass {
 	}
 	
 	
+	@Parameters({"browser","url"})
 	@BeforeClass
-	public void setupBrowser()
+	public void setupBrowser(String browser, String url)
 	{
 		
 		Reporter.log("LOG: INFO : Creating browser instances", true);
 			
-		driver=BrowserFactory.startBrowser(DataProviderFactory.getConfig().getValue("browser"),DataProviderFactory.getConfig().getStagingURL());
+		//driver=BrowserFactory.startBrowser(DataProviderFactory.getConfig().getValue("browser"),DataProviderFactory.getConfig().getStagingURL());
+		
+		driver=BrowserFactory.startBrowser(browser,url);
 		
 		util=new Utility(driver, 30);
 		

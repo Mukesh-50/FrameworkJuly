@@ -44,6 +44,8 @@
 
 	<build>
 
+
+
 		<plugins>
 
 			<plugin>
@@ -51,6 +53,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M3</version>
 				<configuration>
+
+					<systemPropertyVariables>
+						<url>${url}</url>
+						<browser>${browser}</browser>
+						<userame>${username}</userame>
+						<password>${password}</password>
+					</systemPropertyVariables>
+
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLFiles\${xmlFileName}</suiteXmlFile>
 					</suiteXmlFiles>
