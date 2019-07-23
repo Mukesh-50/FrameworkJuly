@@ -17,16 +17,16 @@
       <![CDATA[LOG: INFO : Browser instances closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="9150" started-at="2019-07-23T20:24:33Z" finished-at="2019-07-23T20:24:42Z">
+  <suite name="Suite" duration-ms="43708" started-at="2019-07-23T20:39:05Z" finished-at="2019-07-23T20:39:49Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9150" started-at="2019-07-23T20:24:33Z" finished-at="2019-07-23T20:24:42Z">
+    <test name="Test" duration-ms="43708" started-at="2019-07-23T20:39:05Z" finished-at="2019-07-23T20:39:49Z">
       <class name="testcases.LoginScenario">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoginScenario@1936f0f5]" name="setup" is-config="true" duration-ms="216" started-at="2019-07-24T01:54:33Z" finished-at="2019-07-24T01:54:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoginScenario@531be3c5]" name="setup" is-config="true" duration-ms="176" started-at="2019-07-24T02:09:05Z" finished-at="2019-07-24T02:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setupBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginScenario@1936f0f5]" name="setupBrowser" is-config="true" duration-ms="7528" started-at="2019-07-24T01:54:33Z" finished-at="2019-07-24T01:54:40Z">
+        <test-method status="PASS" signature="setupBrowser(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginScenario@531be3c5]" name="setupBrowser" is-config="true" duration-ms="7130" started-at="2019-07-24T02:09:05Z" finished-at="2019-07-24T02:09:12Z">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method status="FAIL" signature="loginSucess(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginScenario@1936f0f5]" name="loginSucess" duration-ms="265" started-at="2019-07-24T01:54:40Z" finished-at="2019-07-24T01:54:41Z">
+        <test-method status="FAIL" signature="loginSucess(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginScenario@531be3c5]" name="loginSucess" duration-ms="35130" started-at="2019-07-24T02:09:12Z" finished-at="2019-07-24T02:09:47Z">
           <params>
             <param index="0">
               <value>
@@ -64,40 +64,26 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.142)
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+              <![CDATA[Expected condition failed: waiting for url to contain "dashboard". Current url: "https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'CHANDANI', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c8987bf2cf77547e662c06513d5c6628]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e97ed064c5827091a01ac775b1818e6d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=75.0.3770.142)
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "dashboard". Current url: "https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'CHANDANI', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c8987bf2cf77547e662c06513d5c6628
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:277)
-	at pages.HomePage.verifyTitle(HomePage.java:62)
-	at testcases.LoginScenario.loginSucess(LoginScenario.java:26)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e97ed064c5827091a01ac775b1818e6d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at pages.Logout.verifyDashboard(Logout.java:30)
+	at testcases.LoginScenario.loginSucess(LoginScenario.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,22 +114,22 @@ Session ID: c8987bf2cf77547e662c06513d5c6628
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSucess -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginScenario@1936f0f5]" name="tearDown" is-config="true" duration-ms="742" started-at="2019-07-24T01:54:41Z" finished-at="2019-07-24T01:54:41Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.LoginScenario@531be3c5]" name="tearDown" is-config="true" duration-ms="775" started-at="2019-07-24T02:09:47Z" finished-at="2019-07-24T02:09:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginSucess status=FAILURE method=LoginScenario.loginSucess(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginScenario@1936f0f5] output={null}]]]>
+                <![CDATA[[TestResult name=loginSucess status=FAILURE method=LoginScenario.loginSucess(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginScenario@531be3c5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginScenario@1936f0f5]" name="closeBrowser" is-config="true" duration-ms="591" started-at="2019-07-24T01:54:41Z" finished-at="2019-07-24T01:54:42Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginScenario@531be3c5]" name="closeBrowser" is-config="true" duration-ms="646" started-at="2019-07-24T02:09:48Z" finished-at="2019-07-24T02:09:49Z">
           <reporter-output>
             <line>
               <![CDATA[LOG: INFO : Closing browser instances]]>

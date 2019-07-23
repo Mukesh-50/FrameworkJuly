@@ -92,7 +92,7 @@ public class Utility {
 
 			String myBase=ts.getScreenshotAs(OutputType.BASE64);
 			
-			 newBase="data:image/jpg;base64,"+myBase;
+			 newBase="data:image/png;base64,"+myBase;
 		
 		} 
 		catch (WebDriverException e) 
