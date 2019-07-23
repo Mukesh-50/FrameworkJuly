@@ -28,7 +28,7 @@ public class BrowserFactory {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 			
 			
-			driver=new ChromeDriver(opt);
+			driver=new ChromeDriver();
 			
 
 		}

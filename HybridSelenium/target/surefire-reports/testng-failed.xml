@@ -3,9 +3,20 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="unitTest.FileUnitTest"/>
-      <class name="unitTest.UnitTest1"/>
-      <class name="unitTest.TestBrowsers"/>
+      <class name="testcases.LoginScenario"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcases.LoginScenario">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="loginSucess" invocation-numbers="0"/>
+          <include name="setupBrowser"/>
+        </methods>
+      </class> <!-- testcases.LoginScenario -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
