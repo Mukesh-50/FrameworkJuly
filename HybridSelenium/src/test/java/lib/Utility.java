@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
@@ -26,13 +25,15 @@ public class Utility {
 	
 	public Utility(WebDriver driver,int time) 
 	{
-		wait=new WebDriverWait(driver, Duration.ofSeconds(time));
+		wait=new WebDriverWait(driver, 30);
 	}
 	
 	
 	public  void acceptAlert()
 	{
-		wait.until(ExpectedConditions.alertIsPresent()).accept();
+		wait.until(ExpectedConditions.alertIsPresent());
+		//wait.until(Exp)
+		//wait.until(ExpectedConditions.alertIsPresent()).accept();
 	}
 	
 	public void switchToFrame(String frameText)
@@ -84,7 +85,6 @@ public class Utility {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		
 		String newBase = null;
-		//String path=System.getProperty("user.dir")+"\\Screenshots\\"+"LearnAutomation"+getCurrentDateTime()+".png";
 		
 		try 
 		{
@@ -150,7 +150,7 @@ public class Utility {
 	
 	public static WebElement waitForWebElement(WebDriver driver,String xpath,int time)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(time));
+		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
@@ -164,7 +164,7 @@ public class Utility {
 	
 	public static WebElement waitForWebElement(WebDriver driver,WebElement element,int time)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(time));
+		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		WebElement ele=wait.until(ExpectedConditions.elementToBeClickable(element));
 	

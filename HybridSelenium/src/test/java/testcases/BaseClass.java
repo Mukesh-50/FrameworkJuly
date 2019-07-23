@@ -89,7 +89,9 @@ public class BaseClass {
 		{
 			System.out.println("LOG : PASS User is able to login");
 			try {
-				logger.pass("Test Passed ", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				//logger.pass("Test Passed ", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				logger.pass("Test Passed ", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshotBase64(driver)).build());
+
 			} catch (IOException e) {
 				
 			}
@@ -98,7 +100,9 @@ public class BaseClass {
 		{
 			
 			try {
-				logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				//logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshotBase64(driver)).build());
+
 			} catch (IOException e) {
 				
 			}
