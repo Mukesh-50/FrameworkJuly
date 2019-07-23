@@ -17,7 +17,6 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import factory.BrowserFactory;
-import factory.DataProviderFactory;
 import lib.Utility;
 
 public class BaseClass {
