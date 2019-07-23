@@ -5,8 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -36,10 +34,10 @@ public class BrowserFactory {
 		}
 		else if(browserName.equalsIgnoreCase("Firefox"))
 		{
-			FirefoxOptions opt=new FirefoxOptions();
-			opt.setAcceptInsecureCerts(true);
+			//FirefoxOptions opt=new FirefoxOptions();
+			//opt.setAcceptInsecureCerts(true);
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
-			driver=new FirefoxDriver(opt);
+			//driver=new Firef
 		}
 		else if(browserName.equalsIgnoreCase("IE"))
 		{
