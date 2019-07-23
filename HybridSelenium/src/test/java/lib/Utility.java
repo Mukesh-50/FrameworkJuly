@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class Utility {
 	
 	public Utility(WebDriver driver,int time) 
 	{
-		wait=new WebDriverWait(driver, 30);
+		wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 	}
 	
 	
@@ -80,28 +81,6 @@ public class Utility {
 		return path;
 	}
 	
-	public static String captureScreenshotBase64(WebDriver driver)
-	{
-		
-		TakesScreenshot ts=(TakesScreenshot)driver;
-		
-		String newBase = null;
-		
-		try 
-		{
-
-			String myBase=ts.getScreenshotAs(OutputType.BASE64);
-			
-			 newBase="data:image/png;base64,"+myBase;
-		
-		} 
-		catch (WebDriverException e) 
-		{
-		System.out.println("Unable to capture screenshots "+e.getMessage());
-		} 
-		
-		return newBase;
-	}
 	
 	public static String getCurrentDateTime()
 	{
