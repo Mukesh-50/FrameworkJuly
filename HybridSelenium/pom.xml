@@ -12,6 +12,9 @@
 			<artifactId>extentreports</artifactId>
 			<version>4.0.9</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
+
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -52,7 +55,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M3</version>
 				<configuration>
-
+<!-- 
 					<systemPropertyVariables>
 						<url>${url}</url>
 						<browser>${browser}</browser>
@@ -62,7 +65,7 @@
 
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLFiles\${xmlFileName}</suiteXmlFile>
-					</suiteXmlFiles>
+					</suiteXmlFiles> -->
 				</configuration>
 			</plugin>
 
