@@ -4,14 +4,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import factory.BrowserFactory;
-import factory.DataProviderFactory;
-import pages.HomePage;
-import pages.Logout;
 
 public class UploadFileScenario {
 
