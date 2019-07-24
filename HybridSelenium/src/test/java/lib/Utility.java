@@ -92,7 +92,7 @@ public class Utility {
 
 	String mybase=	ts.getScreenshotAs(OutputType.BASE64);
 		
-	newBase="data:image/png:base64,"+mybase;
+	newBase="data:image/png;base64,"+mybase;
 	
 	System.out.println(mybase);
 	
