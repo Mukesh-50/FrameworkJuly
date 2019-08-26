@@ -15,7 +15,7 @@ public class BrowserFactory {
 	
 	static WebDriver driver;
 	
-	public static WebDriver startBrowser(String browserName,String appURL)
+	public static  WebDriver startBrowser(String browserName,String appURL)
 	{
 		
 		Reporter.log("LOG :Info- Creating Browser Instance",true);
@@ -26,8 +26,6 @@ public class BrowserFactory {
 			ChromeOptions opt=new ChromeOptions();
 			opt.setAcceptInsecureCerts(true);
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
-			
-			
 			driver=new ChromeDriver();
 			
 

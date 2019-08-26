@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[LOG :Info- Creating Browser Instance]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50291" started-at="2019-07-24T02:21:18Z" finished-at="2019-07-24T02:22:08Z">
+  <suite name="Default suite" duration-ms="59386" started-at="2019-08-21T09:17:31Z" finished-at="2019-08-21T09:18:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50291" started-at="2019-07-24T02:21:18Z" finished-at="2019-07-24T02:22:08Z">
-      <class name="testcases.HandleAuthe">
-        <test-method status="PASS" signature="loginSucess()[pri:0, instance:testcases.HandleAuthe@4b9e13df]" name="loginSucess" duration-ms="50249" started-at="2019-07-24T07:51:18Z" finished-at="2019-07-24T07:52:08Z">
+    <test name="Default test" duration-ms="59386" started-at="2019-08-21T09:17:31Z" finished-at="2019-08-21T09:18:31Z">
+      <class name="testcases.AppiumDemo1">
+        <test-method status="PASS" signature="demo1()[pri:0, instance:testcases.AppiumDemo1@6093dd95]" name="demo1" duration-ms="59343" started-at="2019-08-21T14:47:31Z" finished-at="2019-08-21T14:48:30Z">
           <reporter-output>
-            <line>
-              <![CDATA[LOG :Info- Creating Browser Instance]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- loginSucess -->
-      </class> <!-- testcases.HandleAuthe -->
+        </test-method> <!-- demo1 -->
+      </class> <!-- testcases.AppiumDemo1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,11 +31,11 @@ public class BaseClass {
 	{
 		System.out.println("Extent report is getting started");
 		
-		report=new ExtentReports();
+		//report=new ExtentReports();
 		
-		ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\LearnAutomation+"+Utility.getCurrentDateTime()+".html");
+		//ExtentHtmlReporter html=new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\LearnAutomation+"+Utility.getCurrentDateTime()+".html");
 		
-		report.attachReporter(html);
+		//report.attachReporter(html);
 	
 		System.out.println("Extent report is ready to use ");
 		
@@ -51,7 +51,7 @@ public class BaseClass {
 			
 		//driver=BrowserFactory.startBrowser(DataProviderFactory.getConfig().getValue("browser"),DataProviderFactory.getConfig().getStagingURL());
 		
-		driver=BrowserFactory.startBrowser(browser,url);
+		driver=new BrowserFactory().startBrowser(browser,url);
 		
 		util=new Utility(driver, 30);
 		
@@ -87,25 +87,10 @@ public class BaseClass {
 		if(result.getStatus()==ITestResult.SUCCESS)
 		{
 			System.out.println("LOG : PASS User is able to login");
-			try {
-				
-				//logger.pass("Test Passed ", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
-				logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromBase64String(Utility.captureScreenshotFromBase64(driver)).build());
-
-			} catch (IOException e) {
-				
-			}
 		}
 		else if(result.getStatus()==ITestResult.FAILURE)
 		{
 			
-			try {
-				//logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
-				logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromBase64String(Utility.captureScreenshotFromBase64(driver)).build());
-
-			} catch (IOException e) {
-				
-			}
 			
 
 		}
@@ -114,7 +99,7 @@ public class BaseClass {
 			System.out.println("LOG : SKIP Test did not executed");
 		}
 		
-		report.flush();
+		//report.flush();
 	
 	}
 }

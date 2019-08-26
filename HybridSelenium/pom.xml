@@ -12,7 +12,15 @@
 			<artifactId>extentreports</artifactId>
 			<version>4.0.9</version>
 		</dependency>
-		
+
+
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>7.1.0</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
 
 
@@ -21,25 +29,40 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.0.0-alpha-2</version>
 		</dependency>
-		 
 
-	 <dependency>
+
+		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
-					</dependency> 
+		</dependency>
 
-	<dependency>
+		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.17</version>
 		</dependency>
 
+<dependency>
+            <groupId>com.github.scribejava</groupId>
+            <artifactId>scribejava-apis</artifactId>
+            <version>2.5.3</version>
+            <scope>test</scope>
+</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.17</version>
-		</dependency> 
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>4.0.0</version>
+    <scope>test</scope>
+</dependency>
+		
 
 
 	</dependencies>
@@ -56,16 +79,11 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 
-					<systemPropertyVariables>
-						<url>${url}</url>
-						<browser>${browser}</browser>
-						<userame>${username}</userame>
-						<password>${password}</password>
-					</systemPropertyVariables>
+					<!-- <systemPropertyVariables> <url>${url}</url> <browser>${browser}</browser> 
+						<userame>${username}</userame> <password>${password}</password> </systemPropertyVariables> -->
 
-					<suiteXmlFiles>
-						<suiteXmlFile>XMLFiles\${xmlFileName}</suiteXmlFile>
-					</suiteXmlFiles> 
+					<!-- <suiteXmlFiles> <suiteXmlFile>XMLFiles\${xmlFileName}</suiteXmlFile> 
+						</suiteXmlFiles> -->
 				</configuration>
 			</plugin>
 

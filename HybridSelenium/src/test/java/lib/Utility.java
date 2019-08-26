@@ -27,7 +27,7 @@ public class Utility {
 	
 	public Utility(WebDriver driver,int time) 
 	{
-		wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		
 	}
 	
 	
