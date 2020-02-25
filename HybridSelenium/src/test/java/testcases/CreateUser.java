@@ -42,6 +42,10 @@ public class CreateUser extends BaseClass{
 		dash.clickOnAdminTab();
 		
 		logger.pass("User is able to create User");
+		logger.pass("User is able to create User1");
+		logger.pass("User is able to create Use2r");
+		logger.pass("User is able to create User3");
+		logger.pass("User is able to create User4");
 			
 	}
 	
