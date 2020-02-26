@@ -46,6 +46,12 @@ public class CreateUser extends BaseClass{
 		logger.pass("User is able to create Use2r");
 		logger.pass("User is able to create User3");
 		logger.pass("User is able to create User4");
+		logger.pass("User is 4");
+		logger.pass("User is 5");
+		logger.pass("User is 6");
+		
+		
+		
 			
 	}
 	
